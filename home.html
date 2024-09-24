@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollo Hospital - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        header {
+            background: #980202;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header .title {
+            font-size: 1.8em;
+            margin: 5px;
+            text-align: center;
+            flex-grow: 1;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 6px;
+            font-weight: bold;
+            margin-right: 6px;
+        }
+        a:hover {
+            font-size: 20px;
+        }
+        a[id="1"] {
+            margin-right: 15px;
+        }
+        .search-bar {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            width: 15%;
+        }
+        .header-icon {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .gallery,
+        .achievements {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .gallery h2,
+        .achievements h2 {
+            text-align: center;
+            margin: 20px 0;
+            color: #980202;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .image-container img {
+            width: calc(50% - 10px);
+            border: 2px solid #0e5f5b;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 10px;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        iframe {
+            border: 2px solid #0e5f5b;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        iframe:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+       .achievements .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .achievements .image-container div {
+            text-align: center;
+            flex: 1;
+        }
+        .achievements .image-container img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #0e5f5b;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 10px;
+        }
+        .achievements .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        footer {
+            text-align: center;
+            background: #980202;
+            color: white;
+            padding: 20px;
+        }
+        .description {
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img style="border:2px solid #002D5B; background-color: white;"
+            src="https://cdn.freebiesupply.com/logos/large/2x/apollo-hospitals-logo-png-transparent.png"
+            alt="Hospital Icon" class="header-icon">
+        <div style="font-style: italic; color: white; font-size: 35px; font-weight: bold;"
+            class="title">Apollo Blood Management Service Pvt.</div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="donate.html">Donate</a>
+            <a href="choose.html">Login/Register</a>
+            <a id="1" href="home.html">Logout</a>
+        </nav>
+        <input type="text" id="searchBar" class="search-bar" placeholder="Search...">
+    </header>
+    <main>
+        <section class="gallery">
+            <h2>Image Gallery</h2>
+            <div class="image-container">
+                <img src="https://cdn.britannica.com/76/82676-050-E95B5C00/nurses-patients-care-procedures.jpg"
+                    alt="Gallery Image 1">
+                <img src="https://www.hcgoncology.com/uploads/images/homepage-banner-mobile-img-1.webp"
+                    alt="Gallery Image 2">
+                <img src="https://damore-mckim.northeastern.edu/wp-content/uploads/2021/08/ft-img.jpeg"
+                    alt="Gallery Image 3">
+            </div>
+            <div class="description">
+                <p>Our dedicated staff providing exceptional care to our patients. We prioritize health and wellness.
+                </p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Video Gallery</h2>
+            <div class="video-container">
+                <iframe width="320" height="240" src="https://www.youtube.com/embed/ckIR9D11af4" frameborder="0"
+                    allowfullscreen></iframe>
+                <iframe width="320" height="240" src="https://www.youtube.com/embed/nNriUKJgjQA" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="achievements">
+            <h2>Our Achievements</h2>
+            <div class="image-container">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4truD-MivkQUYpX8lU3lkGFk2cgP9AxR6GssnMDALI2nCvsUmJm9LcxEi&s=10"
+                        alt="Achievement 1">
+                    <p>Achievement 1.</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD_NEh3tvFvF9MYdcSEBhFX2PjaigQM8xv0w&usqp=CAU"
+                        alt="Achievement 2">
+                    <p>Achievement 2.</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf1-5wc5JM8DTn5nPAf38SI0daOQoXhwCOCg&usqp=CAU"
+                        alt="Achievement 3">
+                    <p>Achievement 3.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>About Apollo Hospital</h2>
+            <p>Apollo Hospital is committed to providing world-class healthcare services. Our state-of-the-art
+                facilities and expert medical professionals ensure that our patients receive the best care possible.</p>
+            <p>We focus on innovation, patient-centered care, and advanced medical technology, making us a leader in the
+                healthcare sector.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: +91 123 456 7890</p>
+        <p>Email: info@apollohospital.com</p>
+        <p>Address: Apollo Hospital, 1-2-3, Street Name, City, State, ZIP Code</p>
+        <p>Pincode: 123456</p>
+        <p>&copy; 2024 Certified Apollo Hospital. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('searchBar').addEventListener('keyup', function (e) {
+            if (e.key === 'Enter') {
+                const query = e.target.value.toLowerCase();
+                
+                if (query.includes('home')) {
+                    window.location.href = 'home.html';
+                } else if (query.includes('about')) {
+                    window.location.href = 'about.html';
+                } else if (query.includes('contact')) {
+                    window.location.href = 'contact.html';
+                } else if (query.includes('donate')) {
+                    window.location.href = 'donate.html';
+                } else if (query.includes('login')) {
+                    window.location.href = 'choose.html';
+                } else if (query.includes('logout')) {
+                    window.location.href = 'home.html';
+                } else if (query.includes('achievements')) {
+                    document.querySelector('.achievements').scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

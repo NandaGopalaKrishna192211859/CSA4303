@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Apollo Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        body {
+            background: url('https://www.nhlbi.nih.gov/sites/default/files/inline-images/bags%20of%20blood%20-%20shutterstock_3233701_0.jpg') no-repeat center center/cover; 
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px; 
+        }
+
+        .donation-form {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 400px; 
+            margin: 0 auto; 
+        }
+    </style>
+</head>
+<body>
+    <form class="donation-form" action="donate.php" method="post">
+        <h2>Donate Blood</h2>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="blood-group">Blood Group:</label>
+        <select id="blood-group" name="blood-group" required>
+            <option value="" disabled selected>Select your blood group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required min="18" max="65">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="donation-date">Date of Donation:</label>
+        <input type="date" id="donation-date" name="donation-date" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

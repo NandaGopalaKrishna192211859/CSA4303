@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - Apollo Hospital</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            background: url('https://www.verywellhealth.com/thmb/CGcSSMzWLdk01zeVwqT1-A0vBBM=/5121x3414/filters:fill(87E3EF,1)/doctors-talking-to-patient-in-hospital-icu-493216255-583452e15f9b58d5b1b967c7.jpg') no-repeat center center/cover; 
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-form {
+            background: rgba(255, 255, 255, 0.9); 
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form class="login-form" action="admin_login.php" method="post">
+        <h2>Admin Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
